@@ -1,0 +1,75 @@
+<div class="contenedor">
+  <img src="assets/logo.png" style="width: 80px; display: block; margin: auto;margin-top: 15px;">
+  <div class="principal" >
+
+    <div style="margin-left: 10px; margin-right: 10px;">
+      <ion-segment (ionChange)="mostrar = ! mostrar" mode="md" value="ingresar" class="segment">
+        <ion-segment-button value="ingresar" color="secondary">
+          <ion-label>Ingresar</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="registrarse" color="secondary">
+          <ion-label>Registrarse</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+      <div *ngIf="mostrar">
+        <ion-item style="margin-top: 10px;">
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input></ion-input>
+          <ion-icon name="person" slot="start"></ion-icon>
+        </ion-item>
+        <br />
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password"></ion-input>
+          <ion-icon name="key" slot="start"></ion-icon>
+        </ion-item>
+        <ion-label color="danger" class="link">¿Olvidaste tu contraseña?</ion-label>
+        <ion-button color="secondary" expand="block" style="margin-top: 15px;">Ingresar</ion-button>
+      </div>
+
+      <div *ngIf="!mostrar">
+        <ion-item style="margin-top: 10px;">
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input></ion-input>
+          <ion-icon name="person" slot="start"></ion-icon>
+        </ion-item>
+        <br />
+        <ion-item>
+          <ion-label position="floating">Correo electrónico</ion-label>
+          <ion-input type="text"></ion-input>
+          <ion-icon name="mail" slot="start"></ion-icon>
+        </ion-item>
+        <br />
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password"></ion-input>
+          <ion-icon name="key" slot="start"></ion-icon>
+        </ion-item>
+        <ion-item >
+          <ion-label color="danger" class="link" style="white-space: inherit;margin-top: 10px;">Acepto los terminos y condiciones de privacidad</ion-label>
+          <ion-checkbox slot="start" style="margin-top: 10px;margin-bottom: 10px;"></ion-checkbox>
+        </ion-item>
+        <ion-button color="secondary" expand="block">Registarse</ion-button>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-label class="link label-centrado">O ingresa con: </ion-label>
+
+    <ion-button color="facebook" style="left: 0;margin-left: 15px;" class="btn-rs">
+      Facebook
+      <ion-icon slot="start" name="logo-facebook" style="color: white;"></ion-icon>
+    </ion-button>
+    <ion-button color="google" style="right: 0;margin-right: 15px;" class="btn-rs">
+      Google
+      <ion-icon slot="start" name="logo-google" style="color: white;"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
