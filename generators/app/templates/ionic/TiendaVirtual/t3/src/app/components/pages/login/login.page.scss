@@ -1,0 +1,87 @@
+.contenedor{
+    //--ion-background-color: -webkit-linear-gradient(top, var(--ion-color-primary) 50%, #ffffff);
+    //--ion-background-color: linear-gradient(top, var(--ion-color-primary) 50%, #ffffff);
+    background: linear-gradient(to bottom, var(--ion-color-primary) 45%, #e8e8e8 45%);
+    height: 100%;
+}
+
+.segment {
+    background: transparent;
+}
+
+.md ion-segment-button, .ios ion-segment-button{
+    color: var(--ion-color-secondary);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.principal {
+    background: white;
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.md ion-icon, .ios ion-icon {
+    font-size: 18px;
+    color: var(--ion-color-secondary);
+}
+
+.item-interactive {
+    border: solid 1px #e4e4e4;
+    border-radius: 10px;
+    //margin: 9px;
+    height: 45px;
+}
+
+.label-stacked.sc-ion-label-md-h, .label-floating.sc-ion-label-md-h{
+    font-size: 13px;
+}
+
+.sc-ion-input-md-h, .sc-ion-input-ios-h{
+    --padding-top: 0px !important;
+}
+
+.link {
+    font-size: 10px;
+    margin: auto;
+    font-weight: bold;
+    margin-top: 19px;
+    display: block;
+}
+
+.link:hover{
+    cursor: pointer;
+}
+
+.item-label-floating{
+    height: 45px !important;
+}
+
+.item-label-floating, .item-label-stacked {
+    --min-height: 45px;
+    --max-height: 45px;
+}
+
+.input-wrapper{
+    height: 45px !important;
+}
+
+.btn-rs {
+    width: 120px;
+    text-transform: none;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 15px;
+}
+
+ion-toolbar{
+    --background: #e8e8e8;
+}
+
+.label-centrado {
+    cursor: default;margin-bottom: 60px;text-align: center;margin-top: 0px;
+}
